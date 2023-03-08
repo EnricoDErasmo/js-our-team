@@ -77,17 +77,28 @@ for (i = 0; i < team.length; i++){
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
 
+// BONUS 1:
+// Trasformare la stringa foto in una immagine effettiva
+
 const containerEl = document.getElementById("container");
+
 
 for (i = 0; i < 6; i++) {
 
     let cardEl = document.createElement("div");
 
-    cardEl.innerHTML = team[i].nome + " - " + team[i].lavoro + " - " + team[i].foto;
+    cardEl.innerHTML = `${team[i].nome}  <br>  ${team[i].lavoro}`;
+    
+    let imgEl = document.createElement("img");
+
+    imgEl.src = `img/${team[i].foto}`;
     
     containerEl.append(cardEl);
+    
+    cardEl.append(imgEl);
 
 };
+
 
 
 
