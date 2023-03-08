@@ -62,3 +62,19 @@ const team = [
     }
 ];
 
+
+// MILESTONE 1:
+// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+const containerEl = document.getElementById("container");
+
+for (i = 0; i < team.length; i++){
+
+    console.log("nome : " + team[i].nome); 
+    console.log("lavoro : " + team[i].lavoro);
+    console.log("foto : " + team[i].foto); 
+};
+
+
+
+
+
