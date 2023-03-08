@@ -77,6 +77,20 @@ for (i = 0; i < team.length; i++){
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
 
+const containerEl = document.getElementById("container");
+
+for (i = 0; i < 6; i++) {
+
+    let cardEl = document.createElement("div");
+
+    cardEl.innerHTML = team[i].nome + " - " + team[i].lavoro + " - " + team[i].foto;
+    
+    containerEl.append(cardEl);
+
+};
+
+
+
 
 
 
