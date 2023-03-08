@@ -80,16 +80,21 @@ for (i = 0; i < team.length; i++){
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
 
-const containerEl = document.getElementById("container");
+// BONUS 2:
+// Organizzare i singoli membri in card/schede
+
+const containerEl = document.getElementById("cards-container");
 
 
 for (i = 0; i < 6; i++) {
 
     let cardEl = document.createElement("div");
+    cardEl.className = "card";
 
-    cardEl.innerHTML = `${team[i].nome}  <br>  ${team[i].lavoro}`;
+    cardEl.innerHTML = `${team[i].lavoro}  <br>  <b>${team[i].nome}</b>`;
     
     let imgEl = document.createElement("img");
+    imgEl.className = "img";
 
     imgEl.src = `img/${team[i].foto}`;
     

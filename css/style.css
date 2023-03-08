@@ -4,4 +4,58 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #f5f5f1;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Assets */
+
+.title-container{
+    text-align: center;
+}
+
+.title-container h1 {
+    padding: 12px 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.title-container p{
+    padding-bottom: 10px;
+
+    font-size: 0.7em;
+    color: #8c8782;
+}
+
+#cards-container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+
+    margin: 10px auto;
+
+    width: 47%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    padding: 4px;
+
+    width: calc(100% / 3 - 30px);
+
+    background-color: white;
+
+    text-align: center;
+
+    font-size: 0.8em;
+}
+
+.img{
+    padding-bottom: 10px;
+    width: 100%;
+}
